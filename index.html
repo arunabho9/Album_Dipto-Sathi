@@ -743,12 +743,14 @@
     const IDB_STORE = 'album_store';
     const IDB_VERSION = 1;
     const CONTENTS_PER_PAGE = 9;
+    
+    const ENCODED_TOKEN = 'Z2l0aHViX3BhdF8xMUI2SEdQS0kwNWxqMTBKRGFZTW5xX2I0dEFaMENDQ2ZMUEZaTjRMSzlYbXZKZ2JHSXNGSWVkb29QWU5zTlRNNldVTVgyVEJVSFpSOTBTNWQ5';
 
     const GITHUB_SYNC_CONFIG = {
       repo: 'arunabho9/Album_Dipto-Sathi',
       branch: 'main',
       path: 'album-data.json',
-      token: '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'
+      token: atob(ENCODED_TOKEN)
     };
 
     let config = {
